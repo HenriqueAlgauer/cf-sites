@@ -1,0 +1,41 @@
+- Quem somos:
+Fundada em 1988, a CF Informática construiu sua reputação ao aliar alto padrão de qualidade, atendimento personalizado e constante busca por inovações. Nossa missão é oferecer as soluções mais inteligentes em tecnologia da informação, otimizando os processos produtivos de nossos clientes e integrando serviços de forma ágil e eficiente.
+Ao longo de nossa trajetória, investimos em desenvolvimento e atualização de softwares, manutenção de hardware, implantação de redes locais, locação de equipamentos e diversas outras frentes de TI. Com isso, nossa equipe se especializou em concentrar todas as demandas de microinformática em uma única empresa, proporcionando praticidade, confiabilidade e tranquilidade para o seu negócio.
+
+1. Suporte Técnico
+Oferecemos suporte presencial, remoto e via telefone para empresas e clientes, evitando que problemas de informática afetem a produtividade. Entre as soluções que disponibilizamos:
+
+Limpeza interna e externa de equipamentos
+Terceirização em Informática (Técnicos, Analistas e Suporte)
+Instalação, Manutenção e Suporte em Sistemas Operacionais
+Instalação e Configuração de Servidores (Windows ou Linux)
+Monitoramento de Servidores e Computadores
+Monitoramento, Segurança e Gestão de Tráfego de Redes
+Instalação, Configuração e Manutenção de Redes
+Instalação, Configuração e Manutenção de Hardware e Software
+Detecção de Vírus, Remoção e Proteção
+Definição e Verificação de Políticas de Backup
+2. Sistemas
+Trabalhamos para que você tenha total controle das informações da sua empresa, em qualquer lugar e a qualquer hora, desde o chão de fábrica até a gestão financeira.
+
+Totem WEB
+A CF Informática, em parceria com a CF Sistemas, desenvolve soluções web personalizadas para todo tipo de demanda. Hoje, a globalização permite que empresas de qualquer lugar do mundo adotem nossas tecnologias, ampliando ainda mais as possibilidades de negócio.
+
+Os sistemas web funcionam por meio de navegadores (browsers) e são uma forte tendência no mercado, pois eliminam a necessidade de instalações complexas. Basta acessar um endereço na internet para utilizar todas as funcionalidades. Além disso, oferecemos sistemas escaláveis, com alta disponibilidade e que podem se adaptar rapidamente ao crescimento de usuários e recursos necessários.
+
+3. Servidores
+Contamos com expertise na configuração de diversos tipos de servidores, como de arquivos, internet, e-mail, bancos de dados, terminal server, backup, proxy autenticado e firewall, entre outros.
+
+Instalação e configuração de servidores Windows ou Linux, servidor web, banco de dados, servidor de e-mail, servidor de backup, sistema de controle de chamados, servidor de arquivos e serviços de gerência de rede.
+Manutenção de redes (cabeamento, estrutura e roteamento), implantação de soluções para acesso e administração remota.
+Implantação de firewall e serviço de centralização segura de mensagens de log, além da administração de sistemas para garantir segurança e eficiência.
+4. Desenvolvimento de Sites
+Atuamos também na criação e manutenção de sites, oferecendo soluções personalizadas e modernas para que sua presença online seja um diferencial. Trabalhamos com:
+
+Concepção e design responsivo, garantindo que o site se adapte a diferentes dispositivos e telas.
+Otimização de desempenho para que o carregamento de páginas seja rápido, proporcionando melhor experiência ao usuário.
+SEO (Search Engine Optimization), para ajudar seu site a ser encontrado com mais facilidade nos mecanismos de busca.
+Integração com outros sistemas (sistemas de pagamento, plataformas de e-commerce, entre outros), conforme a necessidade do seu negócio.
+Dessa forma, a CF Informática se posiciona como um parceiro estratégico para empresas que buscam soluções completas em TI, englobando desde o planejamento e a implementação de sistemas até o cuidado diário com suporte e infraestrutura. Conte conosco para fortalecer e impulsionar as operações do seu negócio!
+
+
