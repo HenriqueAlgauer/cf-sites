@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>CF Informática</title>
   </head>
-  <body>
-    <h1>Site novo CF Sistemas</h1>
+  <body class="antialiased">
+    <!-- MENU -->
+    <nav class="w-full flex-column">
+      <div class="w-full flex pt-8 px-48">
+        <div class="w-4/12">
+          <img src="/src/assets/img/logo.png" class="w-32" alt="" />
+        </div>
+        <div class="flex w-8/12 justify-end gap-20">
+          <div class="flex items-start gap-2">
+            <img src="/src/assets/icon/email.svg" class="w-8" alt="" />
+            <div>
+              <p class="font-semibold">Email</p>
+              <p class="text-gray-600 font-medium">sistemas@cf.com.br</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img src="/src/assets/icon/whatsapp.svg" class="w-8" alt="" />
+            <div>
+              <p class="font-semibold">Suporte</p>
+              <p class="text-gray-600 font-medium">9 9221-2726</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <button
+              class="bg-blue-400 px-4 py-2 rounded-sm shadow hover:bg-blue-500 transition text-white font-semibold"
+            >
+              Chamado On-line
+            </button>
+          </div>
+        </div>
+      </div>
+      <menu
+        class="w-full flex justify-between items-center bg-gray-200 py-4 px-48"
+      >
+        <ul class="flex gap-16 font-medium">
+          <li>
+            <a
+              href="#"
+              class="hover:text-blue-400 text-gray-700 text-lg transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-blue-400 text-gray-700 text-lg transition"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-blue-400 text-gray-700 text-lg transition"
+              >Quem Somos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-blue-400 text-gray-700 text-lg transition"
+              >Contato</a
+            >
+          </li>
+        </ul>
+        <div class="flex gap-2">
+          <div
+            class="p-2 hover:bg-white shadow transition rounded-full border-2 border-blue-400"
+          >
+            <a href="#">
+              <img class="w-8" src="/src/assets/icon/facebook.svg" alt="" />
+            </a>
+          </div>
+          <div
+            class="p-2 hover:bg-white shadow transition rounded-full border-2 border-blue-400"
+          >
+            <a href="#">
+              <img class="w-8" src="/src/assets/icon/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </menu>
+    </nav>
   </body>
 </html>
