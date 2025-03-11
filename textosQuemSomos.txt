@@ -29,6 +29,7 @@ Contamos com expertise na configuração de diversos tipos de servidores, como d
 Instalação e configuração de servidores Windows ou Linux, servidor web, banco de dados, servidor de e-mail, servidor de backup, sistema de controle de chamados, servidor de arquivos e serviços de gerência de rede.
 Manutenção de redes (cabeamento, estrutura e roteamento), implantação de soluções para acesso e administração remota.
 Implantação de firewall e serviço de centralização segura de mensagens de log, além da administração de sistemas para garantir segurança e eficiência.
+
 4. Desenvolvimento de Sites
 Atuamos também na criação e manutenção de sites, oferecendo soluções personalizadas e modernas para que sua presença online seja um diferencial. Trabalhamos com:
 
