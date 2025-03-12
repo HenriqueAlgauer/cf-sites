@@ -7,17 +7,26 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/css/style.css" />
     <title>CF Informática</title>
   </head>
   <body class="antialiased flex flex-col min-h-screen max-w-full">
     <!-- MENU -->
     <nav class="w-full flex-col">
-      <div class="w-full flex pt-8 px-48">
-        <div class="w-4/12">
+      <div class="w-full flex flex-col sm:flex-row pt-8 md:px-4 lg:px-20">
+        <div
+          class="w-full flex items-center justify-between px-2 sm:p-0 sm:w-2/12"
+        >
           <img src="/src/assets/img/logo.png" class="w-32" alt="" />
+          <a
+            href="/chamado"
+            class="sm:hidden bg-blue-400 px-4 py-2 rounded-sm shadow hover:bg-blue-500 transition text-white font-semibold"
+          >
+            Chamado On-line
+          </a>
         </div>
-        <div class="flex w-8/12 justify-end gap-20">
+        <div
+          class="flex w-full sm:w-10/12 justify-around md:justify-end gap-2 sm:gap-8"
+        >
           <div class="flex items-start gap-2">
             <img src="/src/assets/icon/email.svg" class="w-8" alt="" />
             <div>
@@ -32,45 +41,40 @@
               <p class="text-gray-600 font-medium">9 9221-2726</p>
             </div>
           </div>
-          <div class="flex items-center">
-            <button
+          <div class="sm:flex items-center hidden">
+            <a
+              href="/chamado"
               class="bg-blue-400 px-4 py-2 rounded-sm shadow hover:bg-blue-500 transition text-white font-semibold"
             >
               Chamado On-line
-            </button>
+            </a>
           </div>
         </div>
       </div>
       <menu
-        class="w-full flex justify-between items-center mb-0 bg-gray-200 py-4 px-48"
+        class="w-full flex justify-between px-2 md:px-8 mb-0 items-center bg-gray-200 py-4"
       >
-        <ul class="flex gap-16 font-medium text-gray-700">
+        <ul
+          class="flex gap-2 justify-between md:justify-start md:gap-8 w-full md: lg:gap-16 font-medium text-gray-700 md:text-lg"
+        >
           <li>
-            <a href="#" class="hover:text-blue-400 transition text-lg">Home</a>
+            <a href="#" class="hover:text-blue-400 transition">Home</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-400 text-lg transition"
-              >Serviços</a
-            >
+            <a href="#" class="hover:text-blue-400 transition">Serviços</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-400 text-lg transition"
-              >Quem Somos</a
-            >
+            <a href="#" class="hover:text-blue-400 transition">Sobre</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-400 text-lg transition"
-              >Contato</a
-            >
+            <a href="#" class="hover:text-blue-400 transition">Contato</a>
           </li>
           <li>
-            <a href="#" class="hover:text-blue-400 text-lg transition">Email</a>
+            <a href="#" class="hover:text-blue-400 transition">Email</a>
           </li>
           <li>
             <div class="flex items-end justify-center cursor-pointer">
-              <a href="#" class="hover:text-blue-400 text-lg transition"
-                >Suporte
-              </a>
+              <a href="#" class="hover:text-blue-400 transition">Suporte </a>
               <img class="w-6" src="./src/assets/icon/seta.svg" alt="" />
             </div>
             <div
@@ -89,7 +93,7 @@
             </div>
           </li>
         </ul>
-        <div class="flex gap-2">
+        <div class="gap-2 hidden md:flex">
           <div
             class="p-2 hover:bg-gray-100 shadow transition rounded-full border-2 border-blue-400"
           >
@@ -345,72 +349,196 @@
       </div>
 
       <!-- SERVIÇOS DETALHADOS -->
-      <div class="w-full flex flex-col gap-20">
+      <div class="w-full grid grid-cols-2 gap-4 px-24">
         <!-- SUPORTE TÉCNICO -->
-        <div class="flex w-full gap-4 px-24 py-8">
-          <div class="w-7/12 flex flex-col justify-between">
-            <div class="mb-2">
-              <div class="flex gap-2 items-end">
+        <div class="flex w-full">
+          <div class="flex flex-col justify-between">
+            <div class="flex z-10">
+              <div
+                class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
+              >
                 <h1 class="text-4xl font-bold">Suporte Técnico</h1>
                 <img class="w-12" src="/src/assets/icon/laptop.png" alt="" />
               </div>
-              <div class="h-px w-48 my-2 bg-blue-400"></div>
+            </div>
+
+            <div
+              class="border-2 shadow-xl border-blue-400 rounded px-4 pt-8 -mt-8"
+            >
               <p class="text-justify text-lg">
                 Oferecemos suporte presencial, remoto e via telefone para
                 empresas e clientes, evitando que problemas de informática
                 afetem a produtividade. Soluções que disponibilizamos:
               </p>
+              <div class="h-px w-48 bg-blue-400"></div>
 
               <div class="rounded font-medium text-gray-600 flex gap-4 mt-4">
                 <ul
                   class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
                 >
-                  <li>• Limpeza interna e externa de equipamentos</li>
-                  <li>
-                    • Terceirização em Informática (Técnicos, Analistas e
-                    Suporte)
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Limpeza interna e externa de equipamentos
                   </li>
-                  <li>
-                    • Instalação, Manutenção e Suporte em Sistemas Operacionais
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Terceirização em Informática (Técnicos, Analistas e Suporte)
                   </li>
-                  <li>
-                    • Instalação e Configuração de Servidores (Windows ou Linux)
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação, Manutenção e Suporte em Sistemas Operacionais
                   </li>
-                  <li>• Monitoramento de Servidores e Computadores</li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação e Configuração de Servidores (Windows ou Linux)
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Monitoramento de Servidores e Computadores
+                  </li>
                 </ul>
 
                 <ul
                   class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
                 >
-                  <li>
-                    • Monitoramento, Segurança e Gestão de Tráfego de Redes
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Monitoramento, Segurança e Gestão de Tráfego de Redes
                   </li>
-                  <li>• Instalação, Configuração e Manutenção de Redes</li>
-                  <li>
-                    • Instalação, Configuração e Manutenção de Hardware e
-                    Software
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Instalação, Configuração e Manutenção de Redes
                   </li>
-                  <li>• Detecção de Vírus, Remoção e Proteção</li>
-                  <li>• Definição e Verificação de Políticas de Backup</li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação, Configuração e Manutenção de Hardware e Software
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Detecção de Vírus, Remoção e Proteção
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Definição e Verificação de Políticas de Backup
+                  </li>
                 </ul>
               </div>
-            </div>
 
-            <div class="flex justify-center">
-              <a
-                href="#"
-                class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
-                >Saiba Mais</a
-              >
+              <div class="flex justify-center my-4">
+                <a
+                  href="#"
+                  class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+                  >Saiba Mais</a
+                >
+              </div>
             </div>
           </div>
-          <div class="w-5/12 flex items-center justify-center bg-black">
+          <!-- <div class="w-5/12 flex items-center justify-center bg-black">
             <img
               class="opacity-25 h-full"
               src="/src/assets/img/reparo.jpg"
               alt=""
             />
+          </div> -->
+        </div>
+        <!-- SERVIDORES -->
+        <div class="flex w-full">
+          <div class="flex flex-col justify-between">
+            <div class="flex z-10">
+              <div
+                class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
+              >
+                <h1 class="text-4xl font-bold">Suporte Técnico</h1>
+                <img class="w-12" src="/src/assets/icon/laptop.png" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="border-2 shadow-xl border-blue-400 rounded px-4 pt-8 -mt-8"
+            >
+              <p class="text-justify text-lg">
+                Oferecemos suporte presencial, remoto e via telefone para
+                empresas e clientes, evitando que problemas de informática
+                afetem a produtividade. Soluções que disponibilizamos:
+              </p>
+              <div class="h-px w-48 bg-blue-400"></div>
+
+              <div class="rounded font-medium text-gray-600 flex gap-4 mt-4">
+                <ul
+                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
+                >
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Limpeza interna e externa de equipamentos
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Terceirização em Informática (Técnicos, Analistas e Suporte)
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação, Manutenção e Suporte em Sistemas Operacionais
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação e Configuração de Servidores (Windows ou Linux)
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Monitoramento de Servidores e Computadores
+                  </li>
+                </ul>
+
+                <ul
+                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
+                >
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Monitoramento, Segurança e Gestão de Tráfego de Redes
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Instalação, Configuração e Manutenção de Redes
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+
+                    Instalação, Configuração e Manutenção de Hardware e Software
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Detecção de Vírus, Remoção e Proteção
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Definição e Verificação de Políticas de Backup
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex justify-center my-4">
+                <a
+                  href="#"
+                  class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+                  >Saiba Mais</a
+                >
+              </div>
+            </div>
           </div>
+          <!-- <div class="w-5/12 flex items-center justify-center bg-black">
+            <img
+              class="opacity-25 h-full"
+              src="/src/assets/img/reparo.jpg"
+              alt=""
+            />
+          </div> -->
         </div>
       </div>
     </main>
