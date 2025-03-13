@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CF Informática</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>CF Informática</title>
+    <style>
+      .faq-content {
+        overflow: hidden;
+        max-height: 0; /* Inicia fechado */
+        transition: max-height 0.5s ease; /* Velocidade e tipo de animação */
+      }
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+    </style>
   </head>
   <body class="antialiased flex flex-col min-h-screen max-w-full">
     <!-- MENU -->
@@ -289,9 +299,33 @@
               tranquilidade para o seu negócio.
             </p>
           </div>
-          <div class="hidden md:flex items-center justify-center">
+          <div class="md:flex hidden items-center justify-center">
             <img src="/src/assets/img/logo.png" alt="" />
           </div>
+        </div>
+      </div>
+
+      <!-- CARACTERÍSTICAS DA EMPRESA -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-2 justify-center -mt-16 md:-mt-24 mb-12 px-2 xl:px-32 py-8 text-gray-600"
+      >
+        <div
+          class="bg-white border shadow hover:shadow-lg transition p-4 rounded justify-center items-center flex gap-4"
+        >
+          <img class="w-12" src="/src/assets/icon/flag.svg" alt="" />
+          <h2 class="text-2xl font-semibold">37 Anos</h2>
+        </div>
+        <div
+          class="bg-white border shadow hover:shadow-lg transition p-4 rounded justify-center items-center flex gap-4"
+        >
+          <img class="w-12" src="/src/assets/icon/flag.svg" alt="" />
+          <h2 class="text-2xl font-semibold">Experiência em diversas áreas</h2>
+        </div>
+        <div
+          class="bg-white border shadow hover:shadow-lg transition p-4 rounded justify-center items-center flex gap-4"
+        >
+          <img class="w-12" src="/src/assets/icon/flag.svg" alt="" />
+          <h2 class="text-2xl font-semibold"></h2>
         </div>
       </div>
 
@@ -354,8 +388,207 @@
         </div>
       </div>
 
+      <!-- MANEIRA DE TRABALHAR -->
+      <div class="py-12 flex flex-col items-center">
+        <h2 class="text-3xl font-bold">NOSSA FORMA DE TRABALHAR</h2>
+        <span class="uppercase text-sm font-semibold text-blue-400 pt-2"
+          >Mais de 30 anos de experiência</span
+        >
+        <div class="h-px w-48 bg-gray-600 mb-6 mt-px"></div>
+
+        <div class="flex justify-center gap-8 px-20">
+          <div
+            class="w-3/12 hover:bg-white hover:shadow-lg transition bg-gray-200 px-8 py-4 rounded border bg-opacity-50 text-gray-600"
+          >
+            <h3 class="text-xl mb-4 font-medium text-blue-400">
+              1. Responsabilidade em primeiro lugar
+            </h3>
+            <p>
+              Tomamos todas as medidas preventivas para eliminar prontamente
+              qualquer inatividade dos sistemas para que sua empresa possa
+              funcionar sem interrupção.
+            </p>
+          </div>
+          <div
+            class="w-3/12 hover:bg-white hover:shadow-lg transition bg-gray-200 px-8 py-4 rounded border bg-opacity-50 text-gray-600"
+          >
+            <h3 class="text-xl mb-4 font-medium text-blue-400">
+              2. O melhor da tecnologia nos negócios
+            </h3>
+            <p>
+              Iremos implementar estratégias e soluções comprovadas para
+              maximizar um maior valor para o seu negócio. Vamos trabalhar com
+              um planejamento objetivo e estabelecer cronogramas para realização
+              de inspeções e manutenções preventivas para ajudar a sua empresa a
+              atingir suas metas comerciais.
+            </p>
+          </div>
+          <div
+            class="w-3/12 hover:bg-white hover:shadow-lg transition bg-gray-200 px-8 py-4 rounded border bg-opacity-50 text-gray-600"
+          >
+            <h3 class="text-xl mb-4 font-medium text-blue-400">
+              3. Visitas periódicas para prevenção e manutenção
+            </h3>
+            <p>
+              Visitas periódicas para prevenção e regularização, mudando e
+              atualizando seus sistemas para facilitar as necessidades da sua
+              empresa, vamos garantir que seus sistemas possam fazer e o que
+              eles estão destinados a fazer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULÁRIO DE CHAMADO -->
+      <div class="flex flex-col items-center text-gray-600 py-12">
+        <h2 class="text-4xl font-bold">CHAMADO ONLINE</h2>
+        <span class="uppercase text-sm font-semibold text-blue-400 pt-2"
+          >A melhor forma de nos contatar</span
+        >
+        <div class="h-px w-48 mb-4 mt-px bg-gray-800"></div>
+        <form
+          class="bg-gray-200 shadow-lg bg-opacity-50 p-12 flex flex-col gap-2"
+          action=""
+        >
+          <!-- NOME -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Nome</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="text"
+              name="nome"
+              id="name"
+              placeholder="...João Silva"
+            />
+          </div>
+
+          <!-- EMAIL -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Email</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="joao.silva@gmail.com"
+            />
+          </div>
+
+          <!-- TELEFONES -->
+          <div class="grid grid-cols-2 gap-2">
+            <!-- TELEFONE -->
+            <div class="flex flex-col">
+              <div class="-mb-2 ml-2 z-10">
+                <label
+                  class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                  for="zap"
+                  >Telefone</label
+                >
+              </div>
+              <input
+                class="border border-blue-400 rounded font-medium p-2 outline-none"
+                type="tel"
+                name="tel"
+                id="zap"
+                placeholder="(00) 0000-0000"
+              />
+            </div>
+            <!-- CELULAR -->
+            <div class="flex flex-col">
+              <div class="-mb-2 ml-2 z-10">
+                <label
+                  class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                  for="celular"
+                  >Celular</label
+                >
+              </div>
+              <input
+                class="border border-blue-400 rounded font-medium p-2 outline-none"
+                type="tel"
+                name="celular"
+                id="celular"
+                placeholder="(99) 9999-9999"
+              />
+            </div>
+          </div>
+
+          <!-- EMPRESA -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="empresa"
+                >Empresa</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="text"
+              name="empresa"
+              id="empresa"
+              placeholder="Ex: Zé Cia."
+            />
+          </div>
+
+          <!-- CODIGO EQUIPAMENTO -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="codigo"
+                >Código do equipamento</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="text"
+              name="codigo"
+              id="codigo"
+              placeholder="Ex: 123456"
+            />
+          </div>
+
+          <!-- MENSAGEM -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Descreva o que está acontecendo</label
+              >
+            </div>
+            <textarea
+              class="border h-32 border-blue-400 rounded font-medium p-2 outline-none resize-none"
+              id="email"
+              placeholder="Nos diga o problema que está ocorrendo..."
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="mt-4 bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
+
       <!-- SERVIÇOS DETALHADOS -->
-      <div class="w-full grid grid-cols-2 gap-4 px-24">
+      <div
+        class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 px-4 xl:px-12 2xl:px-24"
+      >
         <!-- SUPORTE TÉCNICO -->
         <div class="flex w-full">
           <div class="flex flex-col justify-between">
@@ -378,9 +611,11 @@
               </p>
               <div class="h-px w-48 bg-blue-400"></div>
 
-              <div class="rounded font-medium text-gray-600 flex gap-4 mt-4">
+              <div
+                class="rounded grid grid-cols-1 lg:grid-cols-2 font-medium text-gray-600 flex gap-4 mt-4"
+              >
                 <ul
-                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
+                  class="grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-2 bg-gray-300 rounded shadow"
                 >
                   <li class="flex items-center">
                     <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
@@ -407,7 +642,7 @@
                 </ul>
 
                 <ul
-                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
+                  class="grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-2 bg-gray-300 rounded shadow"
                 >
                   <li class="flex items-center">
                     <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
@@ -451,103 +686,644 @@
             />
           </div> -->
         </div>
-        <!-- SERVIDORES -->
-        <div class="flex w-full">
-          <div class="flex flex-col justify-between">
-            <div class="flex z-10">
-              <div
-                class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
-              >
-                <h1 class="text-4xl font-bold">Suporte Técnico</h1>
-                <img class="w-12" src="/src/assets/icon/laptop.png" alt="" />
-              </div>
-            </div>
 
+        <!-- SERVIDORES -->
+        <div class="flex w-full flex-col">
+          <div class="flex z-10">
             <div
-              class="border-2 shadow-xl border-blue-400 rounded px-4 pt-8 -mt-8"
+              class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
             >
+              <h1 class="text-4xl font-bold">Servidores</h1>
+              <img class="w-12" src="/src/assets/icon/data.svg" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border-2 shadow-xl h-full flex flex-col justify-between border-blue-400 rounded px-4 pt-8 -mt-8"
+          >
+            <div>
               <p class="text-justify text-lg">
-                Oferecemos suporte presencial, remoto e via telefone para
-                empresas e clientes, evitando que problemas de informática
-                afetem a produtividade. Soluções que disponibilizamos:
+                Contamos com expertise na configuração de diversos tipos de
+                servidores, como de arquivos, internet, e-mail, bancos de dados,
+                terminal server, backup, proxy autenticado e firewall, entre
+                outros. Soluções que disponibilizamos:
               </p>
               <div class="h-px w-48 bg-blue-400"></div>
 
-              <div class="rounded font-medium text-gray-600 flex gap-4 mt-4">
+              <div
+                class="rounded grid grid-cols-1 font-medium text-gray-600 flex gap-4 mt-4"
+              >
                 <ul
-                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
+                  class="grid grid-cols-1 bg-opacity-25 gap-6 py-4 px-2 bg-gray-300 rounded shadow"
                 >
                   <li class="flex items-center">
                     <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Limpeza interna e externa de equipamentos
+                    Instalação e configuração de servidores Windows ou Linux,
+                    servidor web, banco de dados, servidor de e-mail, servidor
+                    de backup, sistema de controle de chamados, servidor de
+                    arquivos e serviços de gerência de rede.
                   </li>
                   <li class="flex items-center">
                     <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Terceirização em Informática (Técnicos, Analistas e Suporte)
+                    Manutenção de redes (cabeamento, estrutura e roteamento),
+                    implantação de soluções para acesso e administração remota.
                   </li>
                   <li class="flex items-center">
                     <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-
-                    Instalação, Manutenção e Suporte em Sistemas Operacionais
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-
-                    Instalação e Configuração de Servidores (Windows ou Linux)
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Monitoramento de Servidores e Computadores
+                    Implantação de firewall e serviço de centralização segura de
+                    mensagens de log, além da administração de sistemas para
+                    garantir segurança e eficiência.
                   </li>
                 </ul>
-
-                <ul
-                  class="w-6/12 grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-8 bg-gray-300 rounded shadow"
-                >
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-
-                    Monitoramento, Segurança e Gestão de Tráfego de Redes
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Instalação, Configuração e Manutenção de Redes
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-
-                    Instalação, Configuração e Manutenção de Hardware e Software
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Detecção de Vírus, Remoção e Proteção
-                  </li>
-                  <li class="flex items-center">
-                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
-                    Definição e Verificação de Políticas de Backup
-                  </li>
-                </ul>
-              </div>
-
-              <div class="flex justify-center my-4">
-                <a
-                  href="#"
-                  class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
-                  >Saiba Mais</a
-                >
               </div>
             </div>
+            <div class="flex justify-center my-4">
+              <a
+                href="#"
+                class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+                >Saiba Mais</a
+              >
+            </div>
           </div>
-          <!-- <div class="w-5/12 flex items-center justify-center bg-black">
-            <img
-              class="opacity-25 h-full"
-              src="/src/assets/img/reparo.jpg"
-              alt=""
-            />
-          </div> -->
+        </div>
+
+        <!-- TOTEM -->
+        <div class="flex w-full flex-col">
+          <div class="flex z-10">
+            <div
+              class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
+            >
+              <h1 class="text-4xl font-bold">Sistemas</h1>
+              <img class="w-12" src="/src/assets/icon/empresa.svg" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border-2 shadow-xl h-full flex flex-col justify-between border-blue-400 rounded px-4 pt-8 -mt-8"
+          >
+            <div>
+              <p class="text-justify text-lg">
+                A CF Informática, em parceria com a CF Sistemas, desenvolve
+                soluções web personalizadas para todo tipo de demanda.
+                Trabalhamos para que você tenha total controle das informações
+                da sua empresa, em qualquer lugar e a qualquer hora, desde o
+                chão de fábrica até a gestão financeira.
+              </p>
+              <div class="h-px w-48 bg-blue-400"></div>
+
+              <div
+                class="rounded grid grid-cols-1 font-medium text-gray-600 flex gap-4 mt-4"
+              >
+                <ul
+                  class="grid grid-cols-1 bg-opacity-25 gap-4 py-4 px-2 bg-gray-300 rounded shadow"
+                >
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Soluções Web Personalizadas: Desenvolvimento sob medida para
+                    atender todo tipo de demanda.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Os sistemas web funcionam por meio de navegadores (browsers)
+                    e são uma forte tendência no mercado, pois eliminam a
+                    necessidade de instalações complexas.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Além disso, oferecemos sistemas escaláveis, com alta
+                    disponibilidade e que podem se adaptar rapidamente ao
+                    crescimento de usuários e recursos necessários.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Flexibilidade de Crescimento: Possibilidade de expandir
+                    funcionalidades conforme as necessidades do cliente evoluem.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <a
+                href="#"
+                class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+                >Saiba Mais</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- DES. SITES -->
+        <div class="flex w-full flex-col">
+          <div class="flex z-10">
+            <div
+              class="border bg-white ml-4 px-4 py-2 rounded flex gap-2 items-center"
+            >
+              <h1 class="text-4xl font-bold">Desenvolvimento de Sites</h1>
+              <img class="w-12" src="/src/assets/icon/page.svg" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="border-2 shadow-xl h-full flex flex-col justify-between border-blue-400 rounded px-4 pt-8 -mt-8"
+          >
+            <div>
+              <p class="text-justify text-lg">
+                Atuamos também na criação e manutenção de sites, oferecendo
+                soluções personalizadas e modernas para que sua presença online
+                seja um diferencial. Trabalhamos com:
+              </p>
+              <div class="h-px w-48 bg-blue-400"></div>
+
+              <div
+                class="rounded grid grid-cols-1 font-medium text-gray-600 flex gap-4 mt-4"
+              >
+                <ul
+                  class="grid grid-cols-1 bg-opacity-25 gap-2 py-4 px-2 bg-gray-300 rounded shadow"
+                >
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Criação e Manutenção de Sites: Soluções personalizadas e
+                    modernas para destacar a presença online.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Design Responsivo: Adequação a diferentes dispositivos e
+                    telas, melhorando a experiência do usuário.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Otimização de desempenho para que o carregamento de páginas
+                    seja rápido, proporcionando melhor experiência ao usuário.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    SEO (Search Engine Optimization), para ajudar seu site a ser
+                    encontrado com mais facilidade nos mecanismos de busca.
+                  </li>
+                  <li class="flex items-center">
+                    <img class="w-8" src="/src/assets/icon/check.svg" alt="" />
+                    Integração com outros sistemas (sistemas de pagamento,
+                    plataformas de e-commerce, entre outros), conforme a
+                    necessidade do seu negócio.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex justify-center my-4">
+              <a
+                href="#"
+                class="bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+                >Saiba Mais</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>
+
+    <!-- FORMULÁRIO CONTATO -->
+    <div class="flex flex-col items-center text-gray-600 py-12">
+      <h2 class="text-4xl font-bold">CONTATO</h2>
+      <span class="uppercase text-sm font-semibold text-blue-400 pt-2"
+        >Venha fazer seu próximo projeto conosco</span
+      >
+      <div class="h-px w-48 mb-4 mt-px bg-gray-800"></div>
+      <form
+        class="bg-gray-200 shadow-lg bg-opacity-50 p-12 flex flex-col gap-2"
+        action=""
+      >
+        <div class="grid grid-cols-2 gap-2">
+          <!-- NOME -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Nome</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="text"
+              name="nome"
+              id="name"
+              placeholder="...João Silva"
+            />
+          </div>
+          <!-- WHATSAPP -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >WhatsApp</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="text"
+              name="zap"
+              id="zap"
+              placeholder="(00) 0000-0000"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="zap"
+              >Email</label
+            >
+          </div>
+          <input
+            class="border border-blue-400 rounded font-medium p-2 outline-none"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="joao.silva@gmail.com"
+          />
+        </div>
+
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="zap"
+              >Mensagem</label
+            >
+          </div>
+          <textarea
+            class="border h-32 border-blue-400 rounded font-medium p-2 outline-none resize-none"
+            id="email"
+            placeholder="Nos diga um pouco sobre a sua necessidade"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="mt-4 bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <!-- FAQ -->
+    <div class="w-full px-32 my-8 p-4rounded text-gray-600">
+      <h1 class="text-3xl font-semibold text-gray-600 mb-6">
+        Perguntas Frequentes
+      </h1>
+
+      <!-- FAQ Item 1 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(1)"
+          >
+            <span class="font-semibold"
+              >1) Quais serviços de TI a CF Informática oferece?</span
+            >
+            <svg
+              id="icon-1"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-1" class="faq-content">
+          <p class="p-4">
+            A CF Informática atua em diversas frentes de tecnologia, cobrindo
+            desde suporte técnico e manutenção de hardware até configuração de
+            redes e servidores. Também desenvolvemos sites e sistemas web
+            personalizados, ajudando empresas a fortalecer sua presença online.
+            Além disso, fornecemos soluções de segurança, como implantação de
+            firewalls e backups recorrentes, minimizando riscos de perda de
+            dados. Nossa equipe realiza consultorias para identificar pontos de
+            melhoria na infraestrutura de TI e propõe estratégias adequadas a
+            cada perfil de negócio. Dessa forma, oferecemos um suporte completo
+            e integrado, permitindo que o cliente concentre suas demandas em um
+            só lugar e ganhe mais tranquilidade no dia a dia.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(2)"
+          >
+            <span class="font-semibold"
+              >2) Como funciona o suporte técnico oferecido pela CF
+              Informática?</span
+            >
+            <svg
+              id="icon-2"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-2" class="faq-content">
+          <p class="p-4">
+            Nosso suporte técnico é estruturado para ser rápido e eficiente. Em
+            casos urgentes, disponibilizamos atendimento presencial para
+            diagnosticar e resolver falhas que exijam ação imediata no local. Já
+            para situações de menor complexidade, recorremos ao suporte remoto,
+            acessando sistemas de forma segura para corrigir problemas de
+            software ou realizar configurações específicas. Também monitoramos
+            servidores e redes de forma proativa, identificando falhas em
+            potencial e agindo antes que causem interrupções. Além disso,
+            mantemos um registro de cada atendimento realizado, permitindo
+            análises futuras e a adoção de medidas preventivas. Tudo isso
+            garante mais estabilidade e produtividade para o cliente.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(3)"
+          >
+            <span class="font-semibold"
+              >3) Qual a importância de servidores bem configurados?</span
+            >
+            <svg
+              id="icon-3"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-3" class="faq-content">
+          <p class="p-4">
+            Servidores bem configurados são a base de qualquer infraestrutura
+            estável. Quando esses sistemas operam corretamente, os aplicativos e
+            bancos de dados funcionam de forma contínua, reduzindo riscos de
+            interrupção e perda de informações. A CF Informática prioriza boas
+            práticas de segurança, como aplicação de patches de sistema, uso de
+            firewall e segmentação de redes, evitando vulnerabilidades que
+            possam comprometer dados críticos. Também monitoramos indicadores de
+            desempenho, assegurando que os recursos sejam utilizados de forma
+            equilibrada e que eventuais problemas sejam detectados precocemente.
+            Com essa abordagem, as empresas contam com maior confiabilidade e
+            podem focar no crescimento de suas operações.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(4)"
+          >
+            <span class="font-semibold"
+              >4) Como é o processo de criação e manutenção de sites?</span
+            >
+            <svg
+              id="icon-4"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-4" class="faq-content">
+          <p class="p-4">
+            Primeiro, levantamos as necessidades do cliente, definindo
+            objetivos, público-alvo e funcionalidades desejadas. Em seguida,
+            nossa equipe de design cria um layout responsivo, garantindo boa
+            experiência em diferentes dispositivos. Partimos então para a
+            implementação, cuidando da otimização de desempenho e do uso de
+            tecnologias adequadas. Após o lançamento, mantemos um acompanhamento
+            constante, realizando atualizações, correções e melhorias conforme
+            necessário. Também oferecemos serviços de SEO, integração com
+            sistemas de pagamento e outras funcionalidades sob medida. O
+            resultado é um site que se mantém atualizado, seguro e alinhado às
+            metas de cada empresa.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(5)"
+          >
+            <span class="font-semibold"
+              >5) Por que investir em soluções web personalizadas?</span
+            >
+            <svg
+              id="icon-5"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-5" class="faq-content">
+          <p class="p-4">
+            Soluções web personalizadas atendem melhor às demandas específicas
+            de cada negócio, ao contrário de plataformas genéricas que podem ter
+            recursos limitados. Com um desenvolvimento sob medida, é possível
+            integrar sistemas corporativos, automatizar processos e criar
+            funcionalidades únicas, aumentando a produtividade e o valor
+            percebido pelo cliente final. Além disso, essas soluções tendem a
+            ser mais escaláveis, permitindo ajustes conforme a empresa cresce ou
+            muda de estratégia. Outro ponto importante é a segurança: sistemas
+            personalizados são mais difíceis de serem explorados, já que não
+            seguem um padrão conhecido. Assim, além de maior aderência aos
+            processos internos, a empresa ganha em competitividade e proteção de
+            dados.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 6 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(6)"
+          >
+            <span class="font-semibold"
+              >6) Como a CF Informática lida com a segurança de dados?</span
+            >
+            <svg
+              id="icon-6"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-6" class="faq-content">
+          <p class="p-4">
+            A CF Informática emprega diversas camadas de proteção para garantir
+            a segurança das informações de seus clientes. Isso inclui a
+            instalação e configuração de firewalls, aplicação de patches de
+            sistema e realização de backups regulares. Monitoramos logs em busca
+            de atividades suspeitas e oferecemos conscientização às equipes
+            internas, mostrando boas práticas de uso de senhas e acesso aos
+            sistemas. Além disso, realizamos testes de invasão para identificar
+            brechas e corrigi-las antes que sejam exploradas por terceiros. Essa
+            visão integrada de segurança, aliada à constante atualização das
+            tecnologias utilizadas, reduz as vulnerabilidades e mantém os dados
+            protegidos contra ameaças.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 7 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(7)"
+          >
+            <span class="font-semibold"
+              >7) Quais diferenciais a CF Informática oferece em relação à
+              concorrência?</span
+            >
+            <svg
+              id="icon-7"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-7" class="faq-content">
+          <p class="p-4">
+            Nosso grande diferencial é a abrangência de serviços em um só lugar,
+            simplificando a gestão de TI para o cliente. Atuamos em suporte
+            técnico, desenvolvimento de sites, configuração de servidores,
+            segurança de rede e muito mais, sempre buscando entregar soluções
+            alinhadas às necessidades específicas de cada negócio. Além disso,
+            investimos em uma relação próxima e consultiva, ouvindo as demandas
+            dos clientes e propondo melhorias contínuas. Também mantemos a
+            equipe em constante atualização, acompanhando tendências do mercado
+            para oferecer tecnologias de ponta. A transparência em custos e
+            prazos reforça a confiança no nosso trabalho e consolida parcerias
+            de longo prazo.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 8 -->
+      <div class="border-b">
+        <div class="transition hover:text-blue-500">
+          <button
+            class="w-full text-left py-4 flex justify-between items-center focus:outline-none"
+            onclick="toggleFAQ(8)"
+          >
+            <span class="font-semibold"
+              >8) Como iniciar um projeto com a CF Informática?</span
+            >
+            <svg
+              id="icon-8"
+              class="h-5 w-5 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="faq-8" class="faq-content">
+          <p class="p-4">
+            Para começar, basta entrar em contato conosco por telefone, e-mail
+            ou formulário online, detalhando as necessidades do seu negócio. Em
+            seguida, agendamos uma reunião para entender suas metas, desafios e
+            orçamento disponível. Com essas informações, elaboramos uma proposta
+            técnica e comercial, incluindo escopo, prazos e estimativas de
+            investimento. Após a aprovação, partimos para o planejamento
+            detalhado e a execução, mantendo o cliente informado sobre cada
+            etapa. No final, passamos por testes de validação e fornecemos
+            suporte para garantir que tudo funcione corretamente. Mesmo após a
+            conclusão, seguimos disponíveis para ajustes, atualizações e
+            melhorias futuras, formando um relacionamento baseado em resultados
+            e confiança.
+          </p>
+        </div>
+      </div>
+      <!-- Fim dos 8 itens de FAQ -->
+    </div>
 
     <footer class="static bottom-0 bg-gray-700 w-full px-48 py-16">
       <div
@@ -658,5 +1434,21 @@
     }
 
     updateSlider();
+
+    function toggleFAQ(index) {
+      const content = document.getElementById(`faq-${index}`);
+      const icon = document.getElementById(`icon-${index}`);
+
+      // Se max-height estiver '0px' ou vazia, quer dizer que está fechado
+      if (!content.style.maxHeight || content.style.maxHeight === "0px") {
+        // Definimos maxHeight igual ao scrollHeight para animar até a altura do conteúdo
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add("rotate-180");
+      } else {
+        // Ao fechar, voltamos para 0px
+        content.style.maxHeight = "0px";
+        icon.classList.remove("rotate-180");
+      }
+    }
   </script>
 </html>
