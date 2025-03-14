@@ -4,8 +4,382 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chamado online</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Chamado Online</h1>
+  <body class="antialiased flex flex-col min-h-screen max-w-full">
+    <!-- MENU -->
+    <nav class="w-full flex-col">
+      <div class="w-full flex flex-col sm:flex-row pt-8 md:px-4 lg:px-20">
+        <div
+          class="w-full flex items-center justify-between px-2 sm:p-0 sm:w-2/12"
+        >
+          <img src="/src/assets/img/logo.png" class="w-32" alt="" />
+          <a
+            href="/chamado"
+            class="sm:hidden bg-blue-400 px-4 py-2 rounded-sm shadow hover:bg-blue-500 transition text-white font-semibold"
+          >
+            Chamado On-line
+          </a>
+        </div>
+        <div
+          class="flex w-full sm:w-10/12 justify-around md:justify-end gap-2 sm:gap-8"
+        >
+          <div class="flex items-start gap-2">
+            <img src="/src/assets/icon/email.svg" class="w-8" alt="" />
+            <div>
+              <p class="font-semibold">Email</p>
+              <p class="text-gray-600 font-medium">sistemas@cf.com.br</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img src="/src/assets/icon/whatsapp.svg" class="w-8" alt="" />
+            <div>
+              <p class="font-semibold">Suporte</p>
+              <p class="text-gray-600 font-medium">9 9221-2726</p>
+            </div>
+          </div>
+          <div class="sm:flex items-center hidden">
+            <a
+              href="/chamado.html"
+              class="bg-blue-400 px-4 py-2 rounded-sm shadow hover:bg-blue-500 transition text-white font-semibold"
+            >
+              Chamado On-line
+            </a>
+          </div>
+        </div>
+      </div>
+      <menu
+        class="w-full flex justify-between px-2 md:px-8 mb-0 items-center bg-gray-200 py-4"
+      >
+        <ul
+          class="flex gap-2 justify-between md:justify-start md:gap-8 w-full md: lg:gap-16 font-medium text-gray-700 md:text-lg"
+        >
+          <li>
+            <a href="/index.html" class="hover:text-blue-400 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="/servicos.html" class="hover:text-blue-400 transition"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a href="/sobre.html" class="hover:text-blue-400 transition"
+              >Sobre</a
+            >
+          </li>
+          <li>
+            <a href="/contato.html" class="hover:text-blue-400 transition"
+              >Contato</a
+            >
+          </li>
+
+          <li class="relative menu-parent">
+            <div class="flex items-end justify-center cursor-pointer">
+              <a href="#" class="hover:text-blue-400 transition">Email</a>
+              <img class="w-6" src="./src/assets/icon/seta.svg" alt="" />
+            </div>
+            <div
+              class="submenu absolute z-10 flex flex-col bg-gray-100 rounded-sm overflow-hidden max-h-0 transition-all duration-300"
+            >
+              <a
+                class="border-b w-28 border-gray-400 hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Web Mail</a
+              >
+              <a
+                class="hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Painel</a
+              >
+            </div>
+          </li>
+
+          <li class="relative menu-parent">
+            <div class="flex items-end justify-center cursor-pointer">
+              <a href="#" class="hover:text-blue-400 transition">Suporte</a>
+              <img class="w-6" src="./src/assets/icon/seta.svg" alt="" />
+            </div>
+            <div
+              class="submenu absolute z-10 flex flex-col bg-gray-100 rounded-sm overflow-hidden max-h-0 transition-all duration-300 w-48"
+            >
+              <a
+                class="border-b border-gray-400 hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Hardware</a
+              >
+              <a
+                class="hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Servidores</a
+              >
+              <a
+                class="hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Software</a
+              >
+              <a
+                class="hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="#"
+                >Whatsapp</a
+              >
+              <a
+                class="hover:bg-gray-200 hover:text-blue-400 py-2 px-4 transition"
+                href="/chamado.html"
+                >Chamado Online</a
+              >
+            </div>
+          </li>
+        </ul>
+        <div class="gap-2 hidden md:flex">
+          <div
+            class="p-2 hover:bg-gray-100 shadow transition rounded-full border-2 border-blue-400"
+          >
+            <a href="#">
+              <img class="w-8" src="/src/assets/icon/facebook.svg" alt="" />
+            </a>
+          </div>
+          <div
+            class="p-2 hover:bg-gray-100 shadow transition rounded-full border-2 border-blue-400"
+          >
+            <a href="#">
+              <img class="w-8" src="/src/assets/icon/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </menu>
+    </nav>
+
+    <!-- FORMULÁRIO DE CHAMADO -->
+    <div class="flex flex-col items-center text-gray-600 py-12">
+      <h2 class="text-4xl font-bold">CHAMADO ONLINE</h2>
+      <span class="uppercase text-sm font-semibold text-blue-400 pt-2"
+        >A melhor forma de nos contatar</span
+      >
+      <div class="h-px w-48 mb-4 mt-px bg-gray-800"></div>
+      <form
+        class="bg-gray-200 shadow-lg bg-opacity-50 p-12 flex flex-col gap-2"
+        action=""
+      >
+        <!-- NOME -->
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="zap"
+              >Nome</label
+            >
+          </div>
+          <input
+            class="border border-blue-400 rounded font-medium p-2 outline-none"
+            type="text"
+            name="nome"
+            id="name"
+            placeholder="...João Silva"
+          />
+        </div>
+
+        <!-- EMAIL -->
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="zap"
+              >Email</label
+            >
+          </div>
+          <input
+            class="border border-blue-400 rounded font-medium p-2 outline-none"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="joao.silva@gmail.com"
+          />
+        </div>
+
+        <!-- TELEFONES -->
+        <div class="grid grid-cols-2 gap-2">
+          <!-- TELEFONE -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Telefone</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="tel"
+              name="tel"
+              id="zap"
+              placeholder="(00) 0000-0000"
+            />
+          </div>
+          <!-- CELULAR -->
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="celular"
+                >Celular</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="tel"
+              name="celular"
+              id="celular"
+              placeholder="(99) 9999-9999"
+            />
+          </div>
+        </div>
+
+        <!-- EMPRESA -->
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="empresa"
+              >Empresa</label
+            >
+          </div>
+          <input
+            class="border border-blue-400 rounded font-medium p-2 outline-none"
+            type="text"
+            name="empresa"
+            id="empresa"
+            placeholder="Ex: Zé Cia."
+          />
+        </div>
+
+        <!-- CODIGO EQUIPAMENTO -->
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="codigo"
+              >Código do equipamento</label
+            >
+          </div>
+          <input
+            class="border border-blue-400 rounded font-medium p-2 outline-none"
+            type="text"
+            name="codigo"
+            id="codigo"
+            placeholder="Ex: 123456"
+          />
+        </div>
+
+        <!-- MENSAGEM -->
+        <div class="flex flex-col">
+          <div class="-mb-2 ml-2 z-10">
+            <label
+              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+              for="zap"
+              >Descreva o que está acontecendo</label
+            >
+          </div>
+          <textarea
+            class="border h-32 border-blue-400 rounded font-medium p-2 outline-none resize-none"
+            id="email"
+            placeholder="Nos diga o problema que está ocorrendo..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="mt-4 bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+        >
+          Enviar
+        </button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="static bottom-0 bg-gray-700 w-full xl:px-48py-16">
+      <div
+        class="p-8 w-full flex flex-col md:flex-row md:justify-between gap-8"
+      >
+        <div
+          class="flex md:flex-col items-center lg:items-start lg:pl-16 justify-around w-full gap-4 md:w-4/12"
+        >
+          <img src="/src/assets/img/logo.png" class="w-32" alt="" />
+          <div class="flex gap-2">
+            <div
+              class="p-2 hover:bg-gray-600 shadow transition rounded-full border-2 border-blue-400"
+            >
+              <a href="#">
+                <img class="w-8" src="/src/assets/icon/facebook.svg" alt="" />
+              </a>
+            </div>
+            <div
+              class="p-2 hover:bg-gray-600 shadow transition rounded-full border-2 border-blue-400"
+            >
+              <a href="#">
+                <img class="w-8" src="/src/assets/icon/instagram.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-4 text-white font-medium w-full md:w-8/12 justify-between"
+        >
+          <div class="flex justify-between">
+            <div>
+              <h3 class="font-semibold text-blue-400 text-xl">Páginas</h3>
+              <div class="flex flex-col gap-2">
+                <a class="hover:text-blue-400 transition" href="#">Home</a>
+                <a class="hover:text-blue-400 transition" href="#"
+                  >Quem Somos</a
+                >
+                <a class="hover:text-blue-400 transition" href="#">Serviços</a>
+                <a class="hover:text-blue-400 transition" href="#">Contato</a>
+                <a class="hover:text-blue-400 transition" href="#">Email</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-blue-400 text-xl">Serviços</h3>
+              <div class="flex flex-col gap-2">
+                <a class="hover:text-blue-400 transition" href="#"
+                  >Manutenção de Computadores</a
+                >
+                <a class="hover:text-blue-400 transition" href="#"
+                  >Servidores</a
+                >
+                <a class="hover:text-blue-400 transition" href="#"
+                  >Sistema TOTEM</a
+                >
+                <a class="hover:text-blue-400 transition" href="#"
+                  >Desenvolvimento de Sites</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:items-center">
+            <div>
+              <h3 class="font-semibold text-blue-400 text-xl">Contato</h3>
+              <div class="flex items-end">
+                <img class="w-8" src="./src/assets/icon/pin.svg" alt="" />
+                <p>Rua Alameda Princesa Izabel 3685</p>
+              </div>
+              <div class="flex items-end">
+                <img class="w-8" src="./src/assets/icon/phone.svg" alt="" />
+                <p>41 3029-5010</p>
+              </div>
+              <div class="flex items-end">
+                <img class="w-8" src="./src/assets/icon/whatsapp.svg" alt="" />
+                <p>41 9 9221-2726</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="./src/js/main.js"></script>
 </html>
