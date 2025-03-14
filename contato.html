@@ -154,6 +154,8 @@
       </menu>
     </nav>
 
+    <div class="bg-blue-900 w-full h-96"></div>
+
     <!-- FORMULÁRIO DE CONTATO -->
     <div class="flex flex-col items-center text-gray-600 py-12">
       <h2 class="text-4xl font-bold">CONTATO</h2>
@@ -161,85 +163,108 @@
         >Venha fazer seu próximo projeto conosco</span
       >
       <div class="h-px w-48 mb-4 mt-px bg-gray-800"></div>
-      <form
-        class="bg-gray-200 shadow-lg bg-opacity-50 p-12 flex flex-col gap-2"
-        action=""
-      >
-        <div class="grid grid-cols-2 gap-2">
-          <!-- NOME -->
-          <div class="flex flex-col">
-            <div class="-mb-2 ml-2 z-10">
-              <label
-                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
-                for="zap"
-                >Nome</label
-              >
-            </div>
-            <input
-              class="border border-blue-400 rounded font-medium p-2 outline-none"
-              type="text"
-              name="nome"
-              id="name"
-              placeholder="...João Silva"
-            />
+
+      <div class="grid grid-cols-2 gap-12">
+        <div class="flex flex-col gap-4 justify-center">
+          <div
+            class="flex items-center gap-2 bg-gray-200 bg-opacity-25 border rounded px-4 py-6"
+          >
+            <img class="w-12" src="/src/assets/icon/email.svg" alt="" />
+            <p class="text-2xl">info@cf.com.br</p>
           </div>
-          <!-- WHATSAPP -->
-          <div class="flex flex-col">
-            <div class="-mb-2 ml-2 z-10">
-              <label
-                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
-                for="zap"
-                >WhatsApp</label
-              >
-            </div>
-            <input
-              class="border border-blue-400 rounded font-medium p-2 outline-none"
-              type="text"
-              name="zap"
-              id="zap"
-              placeholder="(00) 0000-0000"
-            />
+          <div
+            class="flex items-center gap-2 bg-gray-200 bg-opacity-25 border rounded px-4 py-6"
+          >
+            <img class="w-12" src="/src/assets/icon/whatsapp.svg" alt="" />
+            <p class="text-2xl">41 9 9999-9999</p>
+          </div>
+          <div
+            class="flex items-center gap-2 bg-gray-200 bg-opacity-25 border rounded px-4 py-6"
+          >
+            <img class="w-12" src="/src/assets/icon/pin.svg" alt="" />
+            <p class="text-2xl">R. Alameda Princesa Izabel 3685</p>
           </div>
         </div>
 
-        <div class="flex flex-col">
-          <div class="-mb-2 ml-2 z-10">
-            <label
-              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
-              for="zap"
-              >Email</label
-            >
-          </div>
-          <input
-            class="border border-blue-400 rounded font-medium p-2 outline-none"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="joao.silva@gmail.com"
-          />
-        </div>
-
-        <div class="flex flex-col">
-          <div class="-mb-2 ml-2 z-10">
-            <label
-              class="px-2 py-px rounded bg-blue-400 text-white font-medium"
-              for="zap"
-              >Mensagem</label
-            >
-          </div>
-          <textarea
-            class="border h-32 border-blue-400 rounded font-medium p-2 outline-none resize-none"
-            id="email"
-            placeholder="Nos diga um pouco sobre a sua necessidade"
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          class="mt-4 bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+        <form
+          class="bg-gray-200 shadow-lg bg-opacity-50 p-12 flex flex-col gap-2"
+          action=""
         >
-          Enviar
-        </button>
-      </form>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="flex flex-col">
+              <div class="-mb-2 ml-2 z-10">
+                <label
+                  class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                  for="zap"
+                  >Nome</label
+                >
+              </div>
+              <input
+                class="border border-blue-400 rounded font-medium p-2 outline-none"
+                type="text"
+                name="nome"
+                id="name"
+                placeholder="...João Silva"
+              />
+            </div>
+
+            <div class="flex flex-col">
+              <div class="-mb-2 ml-2 z-10">
+                <label
+                  class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                  for="zap"
+                  >WhatsApp</label
+                >
+              </div>
+              <input
+                class="border border-blue-400 rounded font-medium p-2 outline-none"
+                type="text"
+                name="zap"
+                id="zap"
+                placeholder="(00) 0000-0000"
+              />
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Email</label
+              >
+            </div>
+            <input
+              class="border border-blue-400 rounded font-medium p-2 outline-none"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="joao.silva@gmail.com"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <div class="-mb-2 ml-2 z-10">
+              <label
+                class="px-2 py-px rounded bg-blue-400 text-white font-medium"
+                for="zap"
+                >Mensagem</label
+              >
+            </div>
+            <textarea
+              class="border h-32 border-blue-400 rounded font-medium p-2 outline-none resize-none"
+              id="email"
+              placeholder="Nos diga um pouco sobre a sua necessidade"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="mt-4 bg-blue-400 px-6 py-2 rounded-sm shadow hover:shadow-lg hover:bg-blue-500 transition font-medium text-white"
+          >
+            Enviar
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- FOOTER -->
